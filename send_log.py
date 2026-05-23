@@ -1,6 +1,7 @@
 import os, json, urllib.request, datetime
 
 url = os.getenv("LOGSTASH_URL")
+print(url)
 if not url:
     print("No LOGSTASH_URL set, skipping")
     exit(0)
